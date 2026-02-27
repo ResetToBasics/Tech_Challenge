@@ -1,4 +1,4 @@
-# Sistema de Compra Programada de Acoes - Desafio Tecnico Itau
+# Sistema de Compra Programada de Açoes - Desafio Tecnico Itau
 
 Implementacao completa do desafio `teste_itau_v2`, com foco em regras de negocio, API REST, MySQL, Kafka, parser COTAHIST, motor de compra programada, rebalanceamento e testes automatizados.
 
