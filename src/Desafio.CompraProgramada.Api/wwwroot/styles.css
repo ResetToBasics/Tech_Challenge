@@ -1,0 +1,103 @@
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1d2433;
+  background: #f3f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: linear-gradient(120deg, #0e4ea8, #1565c0);
+  color: #fff;
+  padding: 24px;
+}
+
+header h1 {
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+section {
+  background: #fff;
+  border: 1px solid #d7deea;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid #bcc8dd;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  width: fit-content;
+  border: 0;
+  border-radius: 8px;
+  background: #0e4ea8;
+  color: #fff;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #083c83;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+pre {
+  margin: 0;
+  background: #0d1424;
+  color: #d7e4ff;
+  border-radius: 10px;
+  padding: 14px;
+  overflow: auto;
+  max-height: 420px;
+}

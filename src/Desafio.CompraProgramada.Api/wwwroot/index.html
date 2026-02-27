@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Compra Programada - Painel Basico</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Sistema de Compra Programada de Acoes</h1>
+    <p>Painel funcional basico para validar fluxos da API.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>1) Cesta Top Five (Admin)</h2>
+      <form id="form-cesta">
+        <label>Nome da Cesta<input name="nome" value="Top Five - Manual" required /></label>
+        <div class="grid-5">
+          <label>Ticker 1<input name="ticker1" value="PETR4" required /></label>
+          <label>% 1<input name="pct1" type="number" step="0.01" value="30" required /></label>
+          <label>Ticker 2<input name="ticker2" value="VALE3" required /></label>
+          <label>% 2<input name="pct2" type="number" step="0.01" value="25" required /></label>
+          <label>Ticker 3<input name="ticker3" value="ITUB4" required /></label>
+          <label>% 3<input name="pct3" type="number" step="0.01" value="20" required /></label>
+          <label>Ticker 4<input name="ticker4" value="BBDC4" required /></label>
+          <label>% 4<input name="pct4" type="number" step="0.01" value="15" required /></label>
+          <label>Ticker 5<input name="ticker5" value="WEGE3" required /></label>
+          <label>% 5<input name="pct5" type="number" step="0.01" value="10" required /></label>
+        </div>
+        <button type="submit">Salvar Cesta</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>2) Cliente</h2>
+      <form id="form-adesao">
+        <label>Nome<input name="nome" required /></label>
+        <label>CPF<input name="cpf" required /></label>
+        <label>Email<input name="email" required /></label>
+        <label>Valor Mensal<input name="valorMensal" type="number" step="0.01" required /></label>
+        <button type="submit">Aderir Cliente</button>
+      </form>
+
+      <form id="form-alterar-valor">
+        <label>Cliente ID<input name="clienteId" type="number" required /></label>
+        <label>Novo Valor Mensal<input name="novoValorMensal" type="number" step="0.01" required /></label>
+        <button type="submit">Alterar Valor Mensal</button>
+      </form>
+
+      <form id="form-saida">
+        <label>Cliente ID<input name="clienteId" type="number" required /></label>
+        <button type="submit">Encerrar Adesao</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>3) Motor</h2>
+      <form id="form-executar-compra">
+        <label>Data Referencia (YYYY-MM-DD)<input name="dataReferencia" value="2026-02-05" required /></label>
+        <button type="submit">Executar Compra</button>
+      </form>
+
+      <form id="form-rebalancear-desvio">
+        <label>Data Referencia (YYYY-MM-DD)<input name="dataReferencia" value="2026-02-25" required /></label>
+        <label>Limiar de Desvio (p.p.)<input name="limiarDesvioPontosPercentuais" type="number" step="0.1" value="5" /></label>
+        <button type="submit">Rebalancear por Desvio</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>4) Consultas</h2>
+      <form id="form-carteira">
+        <label>Cliente ID<input name="clienteId" type="number" required /></label>
+        <button type="submit">Consultar Carteira</button>
+      </form>
+
+      <form id="form-rentabilidade">
+        <label>Cliente ID<input name="clienteId" type="number" required /></label>
+        <button type="submit">Consultar Rentabilidade</button>
+      </form>
+
+      <div class="button-row">
+        <button id="btn-cesta-atual" type="button">Consultar Cesta Atual</button>
+        <button id="btn-cesta-historico" type="button">Consultar Historico de Cestas</button>
+        <button id="btn-custodia-master" type="button">Consultar Custodia Master</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Saida</h2>
+      <pre id="output">Pronto para executar os fluxos.</pre>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Desafio.CompraProgramada.Api/Desafio.CompraProgramada.Api.csproj" />
+    <Project Path="src/Desafio.CompraProgramada.Application/Desafio.CompraProgramada.Application.csproj" />
+    <Project Path="src/Desafio.CompraProgramada.Domain/Desafio.CompraProgramada.Domain.csproj" />
+    <Project Path="src/Desafio.CompraProgramada.Infrastructure/Desafio.CompraProgramada.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Desafio.CompraProgramada.IntegrationTests/Desafio.CompraProgramada.IntegrationTests.csproj" />
+    <Project Path="tests/Desafio.CompraProgramada.UnitTests/Desafio.CompraProgramada.UnitTests.csproj" />
+  </Folder>
+</Solution>
